@@ -1,5 +1,7 @@
 package optional.logger;
 
+import java.util.function.Supplier;
+
 public class Logger {
 
     private boolean isDebug = false;
@@ -15,6 +17,12 @@ public class Logger {
     public void debug(Object message) {
         if (isDebug) {
             System.out.println("[DEBUG] " + message);
+        }
+    }
+
+    public void debug(Supplier<?> supplier) {
+        if (isDebug) {
+            System.out.println("[DEBUG] " + supplier.get());
         }
     }
 }
