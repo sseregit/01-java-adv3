@@ -9,7 +9,8 @@ import parallel.HeavyJob;
 
 public class SumTask extends RecursiveTask<Integer> {
 
-    private static final int THRESHOLD = 4; // 임계값
+    // private static final int THRESHOLD = 4; // 임계값
+    private static final int THRESHOLD = 2; // 임계값
 
     private final List<Integer> list;
 
