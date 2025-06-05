@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
-public class ParalleMain5 {
+public class ParallelMain5 {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "3");
